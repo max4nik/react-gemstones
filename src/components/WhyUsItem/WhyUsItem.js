@@ -1,5 +1,4 @@
 import React from "react";
-import { WhyUsContainer } from "../../containers/WhyUsSection/WhyUs.styled";
 import {
   WhyUsItemContainer,
   WhyUsItemImage,
