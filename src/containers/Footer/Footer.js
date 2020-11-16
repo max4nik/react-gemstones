@@ -5,17 +5,19 @@ import YouTubeIcon from "@material-ui/icons/YouTube";
 import {
   FooterContainer,
   Email,
-  Logo,
   Socials,
   FooterInfo,
   CopyrightText,
 } from "./Footer.styled";
+import { GemLogo } from "../../components/Logo/Logo.styled";
 const Footer = () => {
   return (
     <FooterContainer>
       <FooterInfo>
         <Email>gemss@gmail.com</Email>
-        <Logo href="/">GemsS</Logo>
+        <GemLogo href="/" style={{ marginLeft: 0 }}>
+          GemsS
+        </GemLogo>
         <Socials>
           <InstagramIcon
             style={{ fontSize: 40, color: "white", cursor: "pointer" }}

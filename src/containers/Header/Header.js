@@ -2,7 +2,6 @@ import React from "react";
 import {
   Nav,
   NavbarContainer,
-  NavLogo,
   NavMenu,
   NavItem,
   NavLinks,
@@ -10,13 +9,14 @@ import {
 } from "./Header.styled";
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
 import PersonIcon from "@material-ui/icons/Person";
+import { GemLogo } from "../../components/Logo/Logo.styled";
 
 const Header = () => {
   return (
     <>
       <Nav>
         <NavbarContainer>
-          <NavLogo to="/">GemsS</NavLogo>
+          <GemLogo href="/">GemsS</GemLogo>
           <NavMenu>
             <NavItem>
               <NavLinks to="">Home</NavLinks>
@@ -29,9 +29,16 @@ const Header = () => {
             </NavItem>
           </NavMenu>
           <UserOptions>
-            <ShoppingCartIcon style={{ fontSize: 40, color: "white" }} />
+            <ShoppingCartIcon
+              style={{ fontSize: 40, color: "white", cursor: "pointer" }}
+            />
             <PersonIcon
-              style={{ fontSize: 40, color: "white", marginLeft: 30 }}
+              style={{
+                fontSize: 40,
+                color: "white",
+                marginLeft: 30,
+                cursor: "pointer",
+              }}
             />
           </UserOptions>
         </NavbarContainer>

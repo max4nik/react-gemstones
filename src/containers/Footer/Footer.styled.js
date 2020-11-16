@@ -26,13 +26,6 @@ export const CopyrightText = styled.div`
   font-size: 0.8rem;
   color: white;
 `;
-export const Logo = styled.a`
-  text-decoration: none;
-  font-weight: 900;
-  font-size: 2.25rem;
-  color: white;
-  cursor: pointer;
-`;
 
 export const Socials = styled.ul`
   display: flex;
