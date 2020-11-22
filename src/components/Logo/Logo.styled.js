@@ -1,6 +1,7 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
-export const GemLogo = styled.a`
+export const GemLogo = styled(Link)`
   text-decoration: none;
   color: #ffffff;
   justify-self: flex-start;

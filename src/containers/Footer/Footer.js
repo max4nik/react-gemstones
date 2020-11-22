@@ -15,7 +15,7 @@ const Footer = () => {
     <FooterContainer>
       <FooterInfo>
         <Email>gemss@gmail.com</Email>
-        <GemLogo href="/" style={{ marginLeft: 0 }}>
+        <GemLogo to="/" style={{ marginRight: "3.55rem" }}>
           GemsS
         </GemLogo>
         <Socials>

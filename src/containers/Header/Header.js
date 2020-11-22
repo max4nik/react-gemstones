@@ -16,16 +16,16 @@ const Header = () => {
     <>
       <Nav>
         <NavbarContainer>
-          <GemLogo href="/">GemsS</GemLogo>
+          <GemLogo to="/">GemsS</GemLogo>
           <NavMenu>
             <NavItem>
-              <NavLinks to="">Home</NavLinks>
+              <NavLinks to="/">Home</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="catalog">Catalog</NavLinks>
+              <NavLinks to="/catalog">Catalog</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="about">About Us</NavLinks>
+              <NavLinks to="/about">About Us</NavLinks>
             </NavItem>
           </NavMenu>
           <UserOptions>
