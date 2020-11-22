@@ -7,6 +7,7 @@ import {
   Description,
   PriceFrom,
 } from "./GemstonePreviewItem.styled";
+
 const GemstoneItem = ({ title, description, priceFrom, image }) => {
   return (
     <Item>
