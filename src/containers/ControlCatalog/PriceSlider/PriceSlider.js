@@ -7,10 +7,10 @@ import Slider from "@material-ui/core/Slider";
 function valuetext(value) {
   return `${value} $`;
 }
-const PriceSlider = () => {
-  const [value, setValue] = React.useState([400, 2000]);
-
+const PriceSlider = ({ setPriceRange }) => {
+  const [value, setValue] = React.useState([0, 3000]);
   const handleChange = (event, newValue) => {
+    setPriceRange(newValue);
     setValue(newValue);
   };
 
@@ -29,7 +29,6 @@ const PriceSlider = () => {
             Choose price range:
           </h2>
         </AccordionSummary>
-
         <AccordionDetails>
           <Slider
             value={value}

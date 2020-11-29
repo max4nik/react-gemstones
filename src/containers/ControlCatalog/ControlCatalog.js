@@ -4,13 +4,12 @@ import { Control, ControlSection } from "./ControlCatalog.styled";
 import PriceSlider from "./PriceSlider/PriceSlider";
 import SearchSection from "./Search/SearchSection";
 
-function ControlCatalog() {
+function ControlCatalog({ handleInput, setPriceRange }) {
   return (
     <Control>
       <ControlSection>
-        <CheckBox />
-        <PriceSlider />
-        <SearchSection />
+        <PriceSlider setPriceRange={setPriceRange} />
+        <SearchSection handleInput={handleInput} />
       </ControlSection>
     </Control>
   );

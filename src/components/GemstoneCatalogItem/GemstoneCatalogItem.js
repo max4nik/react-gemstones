@@ -1,4 +1,3 @@
-import { Button } from "antd";
 import React from "react";
 import {
   Item,
@@ -12,7 +11,7 @@ import {
 } from "./GemstoneCatalogItem.styled";
 import AddShoppingCartIcon from "@material-ui/icons/AddShoppingCart";
 
-const GemstoneCatalogItem = ({ image, title, price, weight }) => {
+const GemstoneCatalogItem = ({ image, title, price, weight, id }) => {
   return (
     <Item>
       <GemstoneImage src={image} />
@@ -22,7 +21,7 @@ const GemstoneCatalogItem = ({ image, title, price, weight }) => {
         <Weight>{weight} ct</Weight>
       </Info>
       <Options>
-        <ItemButton>Learn more</ItemButton>
+        <ItemButton to={`/catalog/${id}`}>Learn more</ItemButton>
         <AddShoppingCartIcon
           style={{ marginRight: "2rem", cursor: "pointer" }}
           fontSize="large"

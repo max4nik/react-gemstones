@@ -8,6 +8,6 @@ export const Control = styled.div`
 
 export const ControlSection = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   margin: 0rem 2rem 2rem 2rem;
 `;

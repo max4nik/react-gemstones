@@ -12,6 +12,7 @@ export const Item = styled.div`
   flex-direction: column;
   justify-content: space-between;
   margin-top: 1.5rem;
+  margin-left: 2rem;
 `;
 export const GemstoneImage = styled.img`
   width: 70%;

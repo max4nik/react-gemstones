@@ -4,7 +4,7 @@ export const AllGemstones = styled.div`
   display: flex;
   flex-wrap: wrap;
   padding: 0.5rem 3rem 3rem 3rem;
-  justify-content: space-between;
+  justify-content: left;
   background: black;
   opacity: 0.96;
   color: white;
