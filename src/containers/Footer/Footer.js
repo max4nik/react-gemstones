@@ -19,15 +19,21 @@ const Footer = () => {
           GemsS
         </GemLogo>
         <Socials>
-          <InstagramIcon
-            style={{ fontSize: 40, color: "white", cursor: "pointer" }}
-          />
-          <FacebookIcon
-            style={{ fontSize: 40, color: "white", cursor: "pointer" }}
-          />
-          <YouTubeIcon
-            style={{ fontSize: 40, color: "white", cursor: "pointer" }}
-          />
+          <a href="https://www.instagram.com/" target="blank">
+            <InstagramIcon
+              style={{ fontSize: 40, color: "white", cursor: "pointer" }}
+            />
+          </a>
+          <a href="https://www.facebook.com/" target="blank">
+            <FacebookIcon
+              style={{ fontSize: 40, color: "white", cursor: "pointer" }}
+            />
+          </a>
+          <a href="https://www.youtube.com/" target="blank">
+            <YouTubeIcon
+              style={{ fontSize: 40, color: "white", cursor: "pointer" }}
+            />
+          </a>
         </Socials>
       </FooterInfo>
       <CopyrightText>

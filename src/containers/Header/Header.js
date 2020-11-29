@@ -10,6 +10,7 @@ import {
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
 import PersonIcon from "@material-ui/icons/Person";
 import { GemLogo } from "../../components/Logo/Logo.styled";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -29,17 +30,21 @@ const Header = () => {
             </NavItem>
           </NavMenu>
           <UserOptions>
-            <ShoppingCartIcon
-              style={{ fontSize: 40, color: "white", cursor: "pointer" }}
-            />
-            <PersonIcon
-              style={{
-                fontSize: 40,
-                color: "white",
-                marginLeft: 30,
-                cursor: "pointer",
-              }}
-            />
+            <Link to="cart">
+              <ShoppingCartIcon
+                style={{ fontSize: 40, color: "white", cursor: "pointer" }}
+              />
+            </Link>
+            <Link to="user">
+              <PersonIcon
+                style={{
+                  fontSize: 40,
+                  color: "white",
+                  marginLeft: 30,
+                  cursor: "pointer",
+                }}
+              />
+            </Link>
           </UserOptions>
         </NavbarContainer>
       </Nav>

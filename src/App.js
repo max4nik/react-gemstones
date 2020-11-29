@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import Header from "./containers/Header/Header";
 import Footer from "./containers/Footer/Footer";
 import Catalog from "./pages/Catalog";
+import ItemPage from "./pages/ItemPage";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route exact path="/catalog">
           <Catalog />
         </Route>
+        <Route path={"/catalog/:id"} component={ItemPage} />
       </Switch>
 
       <Footer />

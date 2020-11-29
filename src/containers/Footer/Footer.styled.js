@@ -5,7 +5,7 @@ export const FooterContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  height: 175px;
+  height: 160px;
   position: relative;
 `;
 export const FooterInfo = styled.div`
