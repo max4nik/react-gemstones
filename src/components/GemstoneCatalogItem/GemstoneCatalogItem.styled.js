@@ -15,7 +15,8 @@ export const Item = styled.div`
   margin-left: 2rem;
 `;
 export const GemstoneImage = styled.img`
-  width: 70%;
+  width: 60%;
+  padding: 1rem, 0;
   align-self: center;
 `;
 export const Title = styled.h2`

@@ -11,11 +11,15 @@ import {
 } from "./Footer.styled";
 import { GemLogo } from "../../components/Logo/Logo.styled";
 const Footer = () => {
+  const scrollUp = () => {
+    console.log("scrolled");
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
   return (
     <FooterContainer>
       <FooterInfo>
         <Email>gemss@gmail.com</Email>
-        <GemLogo to="/" style={{ marginRight: "3.55rem" }}>
+        <GemLogo onClick={scrollUp} style={{ marginRight: "3.55rem" }}>
           GemsS
         </GemLogo>
         <Socials>
