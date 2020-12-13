@@ -12,7 +12,6 @@ import {
 import { GemLogo } from "../../components/Logo/Logo.styled";
 const Footer = () => {
   const scrollUp = () => {
-    console.log("scrolled");
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
   return (
