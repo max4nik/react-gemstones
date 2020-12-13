@@ -20,14 +20,16 @@ export const GemstoneImage = styled.img`
   align-self: center;
 `;
 export const Title = styled.h2`
-  margin: 0 0 0.5rem 2.5rem;
+  margin: 0.5rem 0 0.5rem 0;
+  align-self: center;
 `;
 export const Price = styled.p`
   opacity: 85%;
+  margin-left: 2.5rem;
 `;
 export const Weight = styled.p`
   opacity: 85%;
-  margin-left: 1.5rem;
+  margin-left: 1rem;
 `;
 export const ItemButton = styled(ButtonPB)`
   font-size: 1rem;
@@ -39,7 +41,7 @@ export const Options = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  margin: 0 0 1.25rem 1.25rem;
+  margin: 1.25rem 0 1.25rem 1.25rem;
 `;
 export const Info = styled.div`
   display: flex;

@@ -30,12 +30,12 @@ const Header = () => {
             </NavItem>
           </NavMenu>
           <UserOptions>
-            <Link to="cart">
+            <Link to="/cart">
               <ShoppingCartIcon
                 style={{ fontSize: 40, color: "white", cursor: "pointer" }}
               />
             </Link>
-            <Link to="user">
+            <Link to="/user">
               <PersonIcon
                 style={{
                   fontSize: 40,

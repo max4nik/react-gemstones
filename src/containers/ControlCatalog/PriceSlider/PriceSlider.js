@@ -14,7 +14,6 @@ const PriceSlider = ({ setPriceRange }) => {
   const handleChange = (event, newValue) => {
     setPriceRange(newValue);
     setValue(newValue);
-    console.log(pvalue);
   };
 
   return (

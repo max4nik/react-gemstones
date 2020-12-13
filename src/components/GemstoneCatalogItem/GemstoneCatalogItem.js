@@ -9,7 +9,6 @@ import {
   Info,
   ItemButton,
 } from "./GemstoneCatalogItem.styled";
-import AddShoppingCartIcon from "@material-ui/icons/AddShoppingCart";
 
 const GemstoneCatalogItem = ({ image, title, price, weight, id }) => {
   return (
@@ -22,10 +21,6 @@ const GemstoneCatalogItem = ({ image, title, price, weight, id }) => {
       </Info>
       <Options>
         <ItemButton to={`/catalog/${id}`}>Learn more</ItemButton>
-        <AddShoppingCartIcon
-          style={{ marginRight: "2rem", cursor: "pointer" }}
-          fontSize="large"
-        />
       </Options>
     </Item>
   );

@@ -5,6 +5,7 @@ import Header from "./containers/Header/Header";
 import Footer from "./containers/Footer/Footer";
 import Catalog from "./pages/Catalog";
 import ItemPage from "./pages/ItemPage";
+import Cart from "./pages/Cart";
 
 function App() {
   return (
@@ -15,7 +16,9 @@ function App() {
         <Route exact path="/">
           <Home />
         </Route>
-
+        <Route exact path="/cart">
+          <Cart />
+        </Route>
         <Route exact path="/catalog">
           <Catalog />
         </Route>
