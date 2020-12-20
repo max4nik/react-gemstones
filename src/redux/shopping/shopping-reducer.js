@@ -31,6 +31,13 @@ const shopReducer = (state = INITIAL_STATE, action) => {
         ...state,
         gemstonesProducts: state.gemstonesProducts,
       };
+    case actionTypes.CLEAR_CART:
+      state.gemstonesProducts = [];
+      currentState.gemstonesProducts = [];
+      return {
+        ...state,
+        gemstonesProducts: state.gemstonesProducts,
+      };
     default:
       return state;
   }
