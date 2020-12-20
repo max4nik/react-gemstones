@@ -6,6 +6,8 @@ import Footer from "./containers/Footer/Footer";
 import Catalog from "./pages/Catalog";
 import ItemPage from "./pages/ItemPage";
 import Cart from "./pages/Cart";
+import Checkout from "./pages/Checkout";
+import Success from "./pages/Success";
 
 function App() {
   return (
@@ -21,6 +23,12 @@ function App() {
         </Route>
         <Route exact path="/catalog">
           <Catalog />
+        </Route>
+        <Route exact path="/checkout">
+          <Checkout />
+        </Route>
+        <Route exact path="/checkout/success">
+          <Success />
         </Route>
         <Route path={"/catalog/:id"} component={ItemPage} />
       </Switch>
