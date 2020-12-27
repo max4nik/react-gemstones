@@ -21,7 +21,7 @@ const FormCheckout = ({ clearCart }) => {
   const url = "http://localhost:5000/gemstone/";
   return (
     <FormContainer>
-      <TitleStyled>Checkout</TitleStyled>
+      <TitleStyled>Enter your data for shipping</TitleStyled>
       <Formik
         initialValues={{
           firstName: "",
@@ -55,7 +55,7 @@ const FormCheckout = ({ clearCart }) => {
               <InputField title="Address" name="address" type="text" />
               <InputField title="Card Number" name="cardNumber" type="text" />
               <InputField title="Expires Date" name="expiresDate" type="text" />
-              <InputField title="cvv2/cvc2" name="cvv2" type="text" />
+              <InputField title="CVV2" name="cvv2" type="text" />
             </InputContainer>
             <ButtonContainer>
               <ButtonPB onClick={handleSubmit} to="success">

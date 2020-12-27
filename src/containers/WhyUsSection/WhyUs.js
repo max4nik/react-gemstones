@@ -20,9 +20,6 @@ const WhyUs = () => {
           text={"Customer Support 24/7"}
         />
       </WhyUsPoints>
-      <ButtonPB to="/about" style={{ marginBottom: "2rem" }}>
-        About Us
-      </ButtonPB>
     </WhyUsContainer>
   );
 };

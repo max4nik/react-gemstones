@@ -19,7 +19,7 @@ export const ValidationForm = Yup.object().shape({
     .matches(phoneRegExp, "Invalid phone number")
     .required("Phone number is required"),
   address: Yup.string()
-    .min(2, "Min length is 2!")
+    .min(2, "Min length is 5!")
     .max(100, "Max length is 100!")
     .required("Address is required"),
   cardNumber: Yup.string()
