@@ -1,10 +1,10 @@
-import CartItem from "../components/CartItem/CartItem";
-import EmptyBoxImage from "../icons/empty_box.png";
+import CartItem from "../../components/CartItem/CartItem";
+import EmptyBoxImage from "../../icons/empty_box.png";
 import { connect } from "react-redux";
 import { useEffect, useState } from "react";
-import { ButtonPB } from "../components/ButtonPurpleBlue/ButtonPurpleBlue.styled";
+import { ButtonPB } from "../../components/ButtonPurpleBlue/ButtonPurpleBlue.styled";
 import { Link } from "react-router-dom";
-function Cart({ gemstonesProducts }) {
+const Cart = ({ gemstonesProducts }) => {
   const [gemstones, setGemstones] = useState(gemstonesProducts);
   const [isEmpty, setIsEmpty] = useState();
   useEffect(() => {
@@ -87,7 +87,7 @@ function Cart({ gemstonesProducts }) {
       )}
     </div>
   );
-}
+};
 const mapStateToProps = (state) => {
   return {
     gemstonesProducts: state.shop.gemstonesProducts,
