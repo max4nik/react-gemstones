@@ -5,27 +5,35 @@ import YouTubeIcon from "@material-ui/icons/YouTube";
 import {
   FooterContainer,
   Email,
-  Logo,
   Socials,
   FooterInfo,
   CopyrightText,
 } from "./Footer.styled";
+import { GemLogo } from "../../components/Logo/Logo.styled";
 const Footer = () => {
   return (
     <FooterContainer>
       <FooterInfo>
         <Email>gemss@gmail.com</Email>
-        <Logo href="/">GemsS</Logo>
+        <GemLogo to="/" style={{ marginRight: "3.55rem" }}>
+          GemsS
+        </GemLogo>
         <Socials>
-          <InstagramIcon
-            style={{ fontSize: 40, color: "white", cursor: "pointer" }}
-          />
-          <FacebookIcon
-            style={{ fontSize: 40, color: "white", cursor: "pointer" }}
-          />
-          <YouTubeIcon
-            style={{ fontSize: 40, color: "white", cursor: "pointer" }}
-          />
+          <a href="https://www.instagram.com/" target="blank">
+            <InstagramIcon
+              style={{ fontSize: 40, color: "white", cursor: "pointer" }}
+            />
+          </a>
+          <a href="https://www.facebook.com/" target="blank">
+            <FacebookIcon
+              style={{ fontSize: 40, color: "white", cursor: "pointer" }}
+            />
+          </a>
+          <a href="https://www.youtube.com/" target="blank">
+            <YouTubeIcon
+              style={{ fontSize: 40, color: "white", cursor: "pointer" }}
+            />
+          </a>
         </Socials>
       </FooterInfo>
       <CopyrightText>

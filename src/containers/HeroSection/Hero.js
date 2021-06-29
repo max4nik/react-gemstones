@@ -27,7 +27,7 @@ const Hero = () => {
           collection.
         </HeroP>
         <HeroButtonWrapper>
-          <ButtonPB href="/catalog" style={{ marginTop: "4rem" }}>
+          <ButtonPB to="/catalog" style={{ marginTop: "5.5rem" }}>
             Go buy now!
           </ButtonPB>
         </HeroButtonWrapper>

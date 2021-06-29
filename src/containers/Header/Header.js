@@ -2,7 +2,6 @@ import React from "react";
 import {
   Nav,
   NavbarContainer,
-  NavLogo,
   NavMenu,
   NavItem,
   NavLinks,
@@ -10,29 +9,42 @@ import {
 } from "./Header.styled";
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
 import PersonIcon from "@material-ui/icons/Person";
+import { GemLogo } from "../../components/Logo/Logo.styled";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
     <>
       <Nav>
         <NavbarContainer>
-          <NavLogo to="/">GemsS</NavLogo>
+          <GemLogo to="/">GemsS</GemLogo>
           <NavMenu>
             <NavItem>
-              <NavLinks to="">Home</NavLinks>
+              <NavLinks to="/">Home</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="catalog">Catalog</NavLinks>
+              <NavLinks to="/catalog">Catalog</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="about">About Us</NavLinks>
+              <NavLinks to="/about">About Us</NavLinks>
             </NavItem>
           </NavMenu>
           <UserOptions>
-            <ShoppingCartIcon style={{ fontSize: 40, color: "white" }} />
-            <PersonIcon
-              style={{ fontSize: 40, color: "white", marginLeft: 30 }}
-            />
+            <Link to="cart">
+              <ShoppingCartIcon
+                style={{ fontSize: 40, color: "white", cursor: "pointer" }}
+              />
+            </Link>
+            <Link to="user">
+              <PersonIcon
+                style={{
+                  fontSize: 40,
+                  color: "white",
+                  marginLeft: 30,
+                  cursor: "pointer",
+                }}
+              />
+            </Link>
           </UserOptions>
         </NavbarContainer>
       </Nav>

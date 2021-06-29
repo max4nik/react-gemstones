@@ -7,6 +7,7 @@ import {
   Description,
   PriceFrom,
 } from "./GemstonePreviewItem.styled";
+
 const GemstoneItem = ({ title, description, priceFrom, image }) => {
   return (
     <Item>
@@ -14,7 +15,7 @@ const GemstoneItem = ({ title, description, priceFrom, image }) => {
       <Info>
         <Title>{title}</Title>
         <Description>{description}</Description>
-        <PriceFrom href={"/catalog/filter"}>{priceFrom}</PriceFrom>
+        <PriceFrom to={"/catalog"}>{priceFrom}</PriceFrom>
       </Info>
     </Item>
   );

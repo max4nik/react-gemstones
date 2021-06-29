@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const Item = styled.div`
@@ -22,7 +23,7 @@ export const Title = styled.h2`
 export const Description = styled.p`
   margin: 1rem 0;
 `;
-export const PriceFrom = styled.a`
+export const PriceFrom = styled(Link)`
   font-size: 85%;
   text-decoration: none;
   background: #0f0f6d;

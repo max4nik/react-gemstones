@@ -5,9 +5,9 @@ import {
   GemstonesPreview,
 } from "./CatalogPreview.styled";
 import GemstonePreviewItem from "../../components/GemstonePreviewItem/GemstonePreviewItem";
-import SapphirePreviewImage from "../../icons/sapphire_preview.png";
-import RubyPreviewImage from "../../icons/ruby_preview.png";
-import OpalPreviewImage from "../../icons/opal_preview.png";
+import SapphirePreviewImage from "../../icons/sapphire.png";
+import RubyPreviewImage from "../../icons/ruby.png";
+import OpalPreviewImage from "../../icons/opal.png";
 import { ButtonPB } from "../../components/ButtonPurpleBlue/ButtonPurpleBlue.styled";
 const CatalogPreview = () => {
   return (
@@ -33,7 +33,7 @@ const CatalogPreview = () => {
             image={OpalPreviewImage}
           />
         </GemstonesPreview>
-        <ButtonPB href="/catalog">Show all gemstones</ButtonPB>
+        <ButtonPB to="/catalog">Show all gemstones</ButtonPB>
       </CatalogPreviewContent>
     </CatalogPreviewContainer>
   );

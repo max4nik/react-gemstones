@@ -5,7 +5,7 @@ export const FooterContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  height: 175px;
+  height: 160px;
   position: relative;
 `;
 export const FooterInfo = styled.div`
@@ -25,13 +25,6 @@ export const CopyrightText = styled.div`
   font-weight: 500;
   font-size: 0.8rem;
   color: white;
-`;
-export const Logo = styled.a`
-  text-decoration: none;
-  font-weight: 900;
-  font-size: 2.25rem;
-  color: white;
-  cursor: pointer;
 `;
 
 export const Socials = styled.ul`
