@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext, useState } from "react";
 import Accordion from "@material-ui/core/Accordion";
 import AccordionSummary from "@material-ui/core/AccordionSummary";
 import AccordionDetails from "@material-ui/core/AccordionDetails";
@@ -8,7 +8,7 @@ function valuetext(value) {
   return `${value} $`;
 }
 const PriceSlider = ({ setPriceRange }) => {
-  const [value, setValue] = React.useState([0, 3000]);
+  const [value, setValue] = useState([0, 3000]);
   const handleChange = (event, newValue) => {
     setPriceRange(newValue);
     setValue(newValue);
